@@ -23,6 +23,8 @@ $font-family-base:      "Oswald", Tahoma, Helvetica, Arial, sans-serif;
 // @import 'sergei';
 
 @import "_features";
+@import "slick";
+@import "slick-theme";
 
 .container {
 	background: $body-bg;

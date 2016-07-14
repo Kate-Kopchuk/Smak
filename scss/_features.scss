@@ -1,5 +1,10 @@
 $bg-brand: #ffe600;
 $bg-inverse: #fff;
+$body-bg: #fff;
+$text-light: 300;
+$text-regular: 400;
+$text-bold: 700;
+$line-height-base: 1.6;
 
 h3, h5 { text-transform: uppercase; }
 
@@ -11,15 +16,6 @@ h3, h5 { text-transform: uppercase; }
   margin: $margin;
 }
 
-.text-center {
-  text-align: center;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
 .pull-left {
   float: left;
 }
@@ -46,21 +42,16 @@ h3, h5 { text-transform: uppercase; }
   color: #fff;
 }
 .text-light {
-  font-weight: 300;
+  font-weight: $text-light;
 }
 .text-regular {
-  font-weight: 400;
+  font-weight: $text-regular;
 }
 .text-bold {
-  font-weight: 700;
+  font-weight: $text-bold;
 }
 
 // Features
-.features {
-  overflow: hidden;
-  background-color: $body-bg;
-  border: none;
-}
 .features__icon {
   position: relative;
   margin-bottom: 25px; 
@@ -73,8 +64,7 @@ h3, h5 { text-transform: uppercase; }
 }
  svg {
    display: inline-block;
-
-   vertical-align: middle
+   vertical-align: middle;
  }
  .features__article {
   & .tittle {
